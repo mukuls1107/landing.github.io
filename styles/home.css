@@ -2,7 +2,12 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
 
+@media all and (max-width: 528px) {
+     .body.img img { padding-right: 0px; } 
+    .head > .left-title , .right-nav{ display:flex; justify-content: center; align-items: center;}
 }
 
 .head {
@@ -11,6 +16,7 @@
     padding: 10px 10px;
     background-color: #00CCFF;
     color: whitesmoke;
+    flex-wrap: wrap;
 }
 
 .head>.left-title {
@@ -44,6 +50,7 @@
     color: #f4f7f5;
     font-size: large;
     font-weight: 900;
+    flex-wrap: wrap;
 }
 
 .img {
@@ -235,6 +242,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .xc{
@@ -259,3 +267,5 @@ a{
     font-size: medium;
     font-weight: lighter;
 }
+
+.body.img img { max-width: 498px; }
