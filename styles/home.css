@@ -1,9 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;}
+    font-family: 'Roboto', sans-serif;
 
-.head{
+}
+
+.head {
     display: flex;
     /* margin: 20px; */
     padding: 10px 10px;
@@ -11,22 +13,249 @@
     color: whitesmoke;
 }
 
-.head > .left-title{
+.head>.left-title {
     flex-wrap: nowrap;
     flex: 1;
     padding: 5px;
 }
 
-.right-nav{
+.right-nav {
     font-weight: bold;
     font-size: small;
     display: flex;
     margin: 5px 55px;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding: 5px;
-    /* flex: 1 ; */
+    flex: 1;
 }
-.right-nav > div{
-    margin:0 10px;
+
+.right-nav>div {
+    margin: 0 10px;
+}
+
+.body {
+    background-image: url(../assets/Tokyo\ Revengers\ Wallpaper\ _\ Animacion\ tradicional\,\ Fondo\ de\ pantalla\ de\ anime\,\ Arte\ conceptual\ disney.jpg);
+    display: flex;
+    padding: 160px;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+    color: #f4f7f5;
+    font-size: large;
+    font-weight: 900;
+}
+
+.img {
+
+    flex-direction: column;
+    margin: 0px;
+    padding-right: 30px;
+
+}
+
+
+/* THe following CSS code for the button is copied from a gradient website:  https://gradientbuttons.colorion.co/ */
+button {
+    background-image: linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%);
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 18px;
+    width: 180px;
+    height: 50px;
+    margin: 5px;
+    box-shadow: 0 0 20px #eee;
+    transition: 1s;
+    background-size: 200% auto;
+    text-align: center;
+}
+
+button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.main-text {
+    display: flex;
+    margin: 0px -41px;
+    padding-left: 90px;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* flex: 1 auto; */
+    flex-wrap: wrap;
+    padding: 100px 46px;
+}
+
+.main-text>p {
+    justify-content: flex-end;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info>h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+    flex-wrap: wrap;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center
+}
+
+.chars {
+    flex-direction: row;
+    display: block;
+    margin: auto;
+    flex: 0;
+    padding: 25px;
+
+}
+
+.chars>img {
+    border: 4px solid linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%);
+
+    width: 246px;
+    height: 250px;
+
+    object-fit: cover;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chars:hover {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    transition: 1s;
+    border-radius: 30px;
+    /* border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px; */
+    height: 100%;
+    width: auto;
+}
+
+
+
+.quote-bg {
+    background-color: #e5e7eb;
+    height: 400px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    font-family: 'Roboto', sans-serif, ;
+    font-style: italic;
+    color: #1F2937;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.qt-right {
+    align-self: flex-end;
+}
+
+/* Below code is copied from a codepen:  https://codepen.io/jimmycow/pen/LmjVaz*/
+.otro-blockquote {
+    font-size: 1.4em;
+    width: 60%;
+    margin: 50px auto;
+    font-family: Open Sans;
+    font-style: italic;
+    color: #555555;
+    padding: 1.2em 30px 1.2em 75px;
+    border-left: 8px solid #78C0A8;
+    line-height: 1.6;
+    position: relative;
+    background: #EDEDED;
+}
+
+.otro-blockquote::before {
+    font-family: Arial;
+    content: "\201C";
+    color: #78C0A8;
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+.otro-blockquote::after {
+    content: '';
+}
+
+.otro-blockquote span {
+    display: block;
+    color: #333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: auto;
+}
+
+
+.act-btn > h1{
+    font-size: 50px;
+    /* justify-content: center;
+    align-items: center; */
+}
+.act-btn > p {
+    font-size: medium;
+    /* display: block; */
+}
+
+
+.act-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.xc{
+    font-weight: 900;
+    flex-wrap: wrap;
+}
+.xc > p {
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color: white;
+    font-size: medium;
+    font-weight: lighter;
 }
