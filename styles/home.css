@@ -6,8 +6,14 @@
 }
 
 @media all and (max-width: 528px) {
-     .body.img img { padding-right: 0px; } 
-    .head > .left-title , .right-nav{ display:flex; justify-content: center; align-items: center;}
+     .body.img img { 
+        padding-right: 0px; 
+    } 
+    .head > .left-title , .right-nav{ 
+        display:flex; 
+        justify-content: center; 
+        align-items: center;
+    }
 }
 
 .head {
@@ -88,7 +94,7 @@ button:hover {
 
 .main-text {
     display: flex;
-    margin: 0px -41px;
+    margin: 0px 1px;
     padding-left: 90px;
     justify-content: flex-start;
     flex-direction: column;
