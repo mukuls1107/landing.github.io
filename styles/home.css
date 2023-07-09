@@ -9,10 +9,10 @@ html{
     overflow-x: hidden;
 }
 
-body{
-    max-width: 960px;
-}
 @media all and (max-width: 528px) {
+    html{
+        overflow-x: hidden;
+    }
      .body.img img { 
         padding-right: 0px; 
     } 
@@ -34,7 +34,13 @@ body{
         max-height: 100%;
         width: auto;
     }
+    .img-dv{
+        position: absolute;
+        max-height: 190px;
+        left: 41px;
+    }
 }
+
 
 .head {
     display: flex;
