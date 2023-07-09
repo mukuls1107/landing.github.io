@@ -8,6 +8,10 @@
 html{
     overflow-x: hidden;
 }
+
+body{
+    max-width: 960px;
+}
 @media all and (max-width: 528px) {
      .body.img img { 
         padding-right: 0px; 
